@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Pilih Kandidat</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/vote.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Pilih Kandidat</h1>
+
+<p>
+
+Silahkan pilih satu kandidat.
+
+</p>
+
+<div id="candidateContainer"
+class="candidate-grid">
+
+</div>
+
+<button
+
+id="voteButton"
+
+disabled
+
+onclick="showConfirm()"
+
+>
+
+Lanjutkan Voting
+
+</button>
+
+</div>
+
+<div
+id="confirmModal"
+class="modal">
+
+<div class="modal-content">
+
+<h2>Konfirmasi</h2>
+
+<p>
+
+Anda yakin memilih
+
+</p>
+
+<h3 id="candidateName"></h3>
+
+<div class="modal-button">
+
+<button
+class="cancel"
+onclick="closeModal()">
+
+Batal
+
+</button>
+
+<button
+class="confirm"
+onclick="submitVote()">
+
+Ya, Vote
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/vote.js"></script>
+
+</body>
+
+</html>
